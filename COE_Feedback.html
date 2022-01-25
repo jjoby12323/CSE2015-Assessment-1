@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> COE/Feedback Form </title>
+		<style> 
+                body {background-color: rgb(0, 236, 236);}
+                table, th, td {background-color: rgb(255, 255, 255); margin-left: auto; margin-right: auto;border:2px solid black;}
+                form {background-color: rgb(223, 223, 223); max-width:fit-content; max-height: fit-content; margin: 50px auto; padding: 30px 20px;}
+        </style>
+	</head>
+	
+	<body>
+		<h1><center> <u> Exam Time Table </u></h1>
+        <table style = "width:50%" class = "center">
+            <tr>
+                <th> Subject </th>
+                <th> Slot </th>
+                <th> Reporting Time </th>
+                <th> Start Time </th>
+            </tr>
+            <tr>
+                <td> <center> Mathematics </td>
+                <td> <center> A1 </td>
+                <td> <center> 8:15 AM </td>
+                <td> <center> 8:30 AM </td>
+            </tr>
+            <tr>
+                <td> <center> English </td>
+                <td> <center> B1 </td>
+                <td> <center> 8:15 AM </td>
+                <td> <center> 8:30 AM </td>
+            </tr>
+            <tr>
+                <td> <center> Science </td>
+                <td rowspan = 2> <center> D1 </td>
+                <td colspan = 2> <center> 8:30 AM </td>
+            </tr>
+            <tr>
+                <td> <center> Physics </td>
+                <td> <center> 8:15 AM </td>
+                <td> <center> 8:30 AM </td>
+            </tr>
+        </table>
+	</body>
+    <main>
+        <form action="" id="form" method="post" > <center>
+            <h1> <center> <u> Student Feedback Form </u></h1>
+                <p>
+                    <label> First name </label><br>
+                    <input type="text" name="first_name"  required> 
+                    </p>
+                <p>
+                    <label> Last name </label><br>
+                    <input type="text" name="last_name">
+                </p>
+                <p>
+                    <label> Email </label><br>
+                    <input type="email" name="email" required>
+                </p>
+                <p>
+                    <label> Password </label><br>
+                    <input type="password" name="password">
+                  </p>
+                <p>
+                    <label> Phone number </label><br>
+                    <input type="tel" name="phone">
+                </p>
+                <p>
+                    <label> Suggestions </label><br>
+                    <textarea name="comment" form="form"> </textarea>
+                </p>
+                <p>
+                    <button> Submit </button>
+                </p>             
+        </form>
+    </main>
+</html>
